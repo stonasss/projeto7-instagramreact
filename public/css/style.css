@@ -157,6 +157,10 @@ body {
   margin-top: 18px;
 }
 
+ion-icon[name="heart"] {
+  color: #ec4957;
+}
+
 .post .topo {
   display: flex;
   justify-content: space-between;
@@ -231,6 +235,9 @@ body {
 
 .sidebar > .usuario .texto {
   display: flex;
+  position: absolute;
+  top: 16px;
+  left: 50px;
   flex-direction: column;
   margin-left: 14px;
   font-weight: 300;
@@ -399,4 +406,9 @@ ion-icon {
 .usuario ion-icon {
   margin-left: 5px;
 }
+
+.usuario {
+  position: relative;
+}
+
 
