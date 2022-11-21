@@ -1,4 +1,5 @@
 export default function NavBar() {
+    /*renderização do layout da barra superior do site*/
     return (
         <div class="navbar">
             <div class="container">

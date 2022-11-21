@@ -40,23 +40,26 @@ function Post(props){
         }
     }
 
+    /*função para curtir pelo ícone de coração*/
     function likePost(){
         if (heartClicked == "heart-outline"){
             setheartClicked("heart")
-            settotalLikes(props.curtidas + 1)
+            settotalLikes(totalLikes + 1)
         } else if (heartClicked == "heart") {
             setheartClicked("heart-outline")
             settotalLikes(totalLikes - 1)
         }
     }
 
+    /*função para curtir pela foto do post*/
     function likeImg(){
         if (heartClicked == "heart-outline"){
             setheartClicked("heart")
-            settotalLikes(props.curtidas + 1)
+            settotalLikes(totalLikes + 1)
         }
     }
 
+    /*renderização de layout dos posts do conteúdo*/
     return (
         <div data-test="post" class="post">
             <div class="topo">
@@ -70,7 +73,7 @@ function Post(props){
             </div>
 
             <div class="conteudo">
-                <img data-test="post-image" onClick={likeImg} src={props.imagem} />
+                <img data-test="post-image" onDoubleClick={likeImg} src={props.imagem} />
             </div>
 
             <div class="fundo">

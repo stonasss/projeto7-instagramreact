@@ -6,6 +6,8 @@ export default function Sugestoes(){
         {imagem: "assets/img/adorable_animals.svg", nome: "adorable_animals", razao: "Segue você"},
         {imagem: "assets/img/smallcutecats.svg", nome: "smallcutecats", razao: "Segue você"},
     ]
+
+    /*renderização de layout das sugestões do site*/
     return (
         <div class="sugestoes">
             <div class="titulo">

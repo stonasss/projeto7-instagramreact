@@ -9,6 +9,7 @@ export default function Stories(){
         {usuario: "filomoderna", imagem: "assets/img/filomoderna.svg"},
         {usuario: "memeriagourmet", imagem: "assets/img/memeriagourmet.svg"}
     ]
+    /*renderização de layout da parte de stories*/
     return (
         <div class="stories">
             {stories.map((story) => <Story usuario={story.usuario} imagem={story.imagem}/>)}

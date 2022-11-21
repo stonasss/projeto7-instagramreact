@@ -20,6 +20,7 @@ function User(props){
     const [nome, setNome] = useState(props.nome);
     const [imagem, setImagem] = useState(props.imagem)
     
+    /*renderização de layout da informação do usuário*/
     return (
         <div data-test="user" class="usuario">
             <img data-test="profile-image" onClick={mudarImagem} src={!imagem ? props.imagem : imagem} />
@@ -33,10 +34,12 @@ function User(props){
         </div>
     )
 
+    /*função para mudar o nome pelo ícone do lápis*/
     function mudarNome() {
         setNome(prompt('Qual o seu nome?'))
     }
     
+    /*função para mudar o nome do usuário logado*/
     function mudarImagem() {
         const imagemAdicionada = prompt('Insira o link da sua imagem')
         setImagem(imagemAdicionada)
